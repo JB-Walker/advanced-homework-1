@@ -6,6 +6,7 @@ import state from './state';
 
 function increaseCart(){
   state.numberOfItemsInCart += 1;
+  state.productNumbersInCart.push(state.products.id);
   ReactDOM.render(
     <App increaseCart={increaseCart} checkout={checkout} state={state} />,
     document.getElementById("root")
@@ -14,6 +15,7 @@ function increaseCart(){
 
  function checkout(){
   state.numberOfItemsInCart = 0;
+  state.productNumbersInCart 
   ReactDOM.render(
     <App increaseCart={increaseCart} checkout={checkout} state={state} />,
     document.getElementById("root")

@@ -1,4 +1,5 @@
 export default {
+  "productNumbersInCart": [],
   "numberOfItemsInCart": 0,
   products:[{
     "id": 1,
